@@ -25,7 +25,7 @@ Antes de cambiar un alias, usamos este comando para revisar si ya está escrito 
 grep -n "alias ll=" ~/.bashrc
 ```
 
-![Búsqueda del alias ll en bashrc](capturas/captura2.png)
+![Búsqueda del alias ll en bashrc](capturas/Captura2.png)
 
 *Lo que pasa en la pantalla:* El comando busca la palabra exacta dentro del archivo y nos devuelve una línea de texto que nos indica en qué número de renglón se encuentra guardado.
 
@@ -36,7 +36,7 @@ Para modificar el comportamiento del comando, usamos esta instrucción que escri
 printf "%s\n" "alias ll='ls -lah --color=auto'" >> ~/.bashrc
 ```
 
-![Uso de printf para añadir el nuevo alias](capturas/captura3.png)
+![Uso de printf para añadir el nuevo alias](capturas/Captura3.png)
 
 *Lo que pasa en la pantalla:* La terminal no muestra ningún mensaje abajo y pasa directo a una línea limpia. Esto significa que el comando se ejecutó bien y guardó el cambio dentro del archivo de forma permanente.
 
@@ -47,7 +47,7 @@ Como modificamos el archivo de configuración, usamos este comando para que la t
 source ~/.bashrc
 ```
 
-![Actualización del entorno con source](capturas/captura4.png)
+![Actualización del entorno con source](capturas/Captura4.png)
 
 *Lo que pasa en la pantalla:* La terminal no muestra texto y se pasa al siguiente renglón. Esto nos indica que leyó el archivo correctamente y aplicó los cambios en el momento.
 
@@ -58,6 +58,6 @@ Para asegurarnos de que todo funcionó correctamente, le preguntamos a la termin
 type ll
 ```
 
-![Verificación del alias final con type](capturas/captura5.png)
+![Verificación del alias final con type](capturas/Captura5.png)
 
 *Lo que pasa en la pantalla:* La terminal nos responde confirmando que el comando ya tiene guardados los nuevos cambios y parámetros que le asignamos en el Paso 2.
