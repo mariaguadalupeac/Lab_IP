@@ -10,7 +10,7 @@ Para la investigación, encontré que el comando que sirve para ver la lista de 
 alias
 ```
 
-![Lista de alias en la terminal](capturas/Captura1.png)
+![Lista de alias en la terminal](../Capturas/16_Captura1_alias.png)
 
 *Lo que pasa en la pantalla:* Al escribir el comando y dar Enter, la terminal nos muestra el listado de todos los atajos o nombres cortos que ya vienen guardados por defecto en el sistema operativo.
 
@@ -25,7 +25,7 @@ Antes de cambiar un alias, usamos este comando para revisar si ya está escrito 
 grep -n "alias ll=" ~/.bashrc
 ```
 
-![Búsqueda del alias ll en bashrc](capturas/Captura2.png)
+![Búsqueda del alias ll en bashrc](../Capturas/17_Captura2_alias.png)
 
 *Lo que pasa en la pantalla:* El comando busca la palabra exacta dentro del archivo y nos devuelve una línea de texto que nos indica en qué número de renglón se encuentra guardado.
 
@@ -36,7 +36,7 @@ Para modificar el comportamiento del comando, usamos esta instrucción que escri
 printf "%s\n" "alias ll='ls -lah --color=auto'" >> ~/.bashrc
 ```
 
-![Uso de printf para añadir el nuevo alias](capturas/Captura3.png)
+![Uso de printf para añadir el nuevo alias](../Capturas/18_Captura3_alias.png)
 
 *Lo que pasa en la pantalla:* La terminal no muestra ningún mensaje abajo y pasa directo a una línea limpia. Esto significa que el comando se ejecutó bien y guardó el cambio dentro del archivo de forma permanente.
 
@@ -47,7 +47,7 @@ Como modificamos el archivo de configuración, usamos este comando para que la t
 source ~/.bashrc
 ```
 
-![Actualización del entorno con source](capturas/Captura4.png)
+![Actualización del entorno con source](../Capturas/19_Captura4_alias.png)
 
 *Lo que pasa en la pantalla:* La terminal no muestra texto y se pasa al siguiente renglón. Esto nos indica que leyó el archivo correctamente y aplicó los cambios en el momento.
 
@@ -58,6 +58,6 @@ Para asegurarnos de que todo funcionó correctamente, le preguntamos a la termin
 type ll
 ```
 
-![Verificación del alias final con type](capturas/Captura5.png)
+![Verificación del alias final con type](../Capturas/20_Captura5_alias.png)
 
 *Lo que pasa en la pantalla:* La terminal nos responde confirmando que el comando ya tiene guardados los nuevos cambios y parámetros que le asignamos en el Paso 2.

@@ -1,7 +1,7 @@
 #  Permisos en Linux
 
 ### Captura de la Terminal
-<img src="lah-captura.png">
+<img src="../Capturas/08_lah-captura.png" />
 
 
 ### Tabla de Permisos Obtenidos
